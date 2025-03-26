@@ -1,0 +1,48 @@
+# Ignore all target directories from multiple Cargo projects
+**/target/
+
+# Ignore Cargo.lock only for library projects
+# (Track it for binary projects if necessary)
+**/Cargo.lock
+
+# Ignore intermediate build files
+**/*.rs.bk
+
+# Ignore IDE/editor-specific files
+**/.idea/
+**/.vscode/
+*.code-workspace
+
+# Ignore backup and temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Ignore debug/release build directories in case they're not inside target
+**/debug/
+**/release/
+
+# Ignore Rust analyzer files
+**/.rust-analyzer.json
+
+# Ignore coverage reports
+**/.coverage/
+**/*.profraw
+
+# Ignore Cargo registry and build artifacts
+**/.cargo/
+**/target/
+
+# Ignore generated documentation
+**/target/doc/
+
+# Ignore build scripts output
+**/build/
+
+# Ignore Clippy lints output
+**/clippy.log
+
+# Ignore Rustfmt backups
+**/*.rs.bk
